@@ -1,0 +1,47 @@
+body,
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: var(--background-colour);
+	color: var(--text-colour);
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-between;
+	background-color: var(--primary-colour);
+	margin-top: 2rem;
+	font-size: 0.8em;
+	color: var(--link-colour);
+	padding: 0.5em;
+}
+
+footer a {
+	color: var(--link-colour);
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: white;
+}
+
+.wrapper {
+	flex: 1 0 auto;
+}
+
+.container,
+.page-heading {
+	margin: 20px auto;
+}
+
+/* @media screen {
+	.container {
+		margin: 40px auto;
+	}
+} */
