@@ -1,12 +1,20 @@
-$primary: #f4f3ee;
-$secondary: #ffffff;
-$light: #f4f3ee;
-$background-colour: #e5e5e5;
-$active-colour: #c32c72;
-$link-colour: #8d8d8d;
-$text-colour: black;
+$font-primary: "Open Sans", sans-serif;
+$font-links: "Archivo Narrow", sans-serif; 
 
-$navbar-light-brand-color: $text-colour;
-$navbar-light-active-color: $active-colour;
-$nav-link-color: $link-colour;
+$colours: (
+	grey: #8d8d8d,
+	black: #262626,
+	pink: #c32c72,
+	beige: #f4f3ee,
+	white: #ffffff,
+	light-grey: #e5e5e5,
+);
 
+@function getColour($colour) {
+	@return map-get($colours, $colour);
+}
+
+$navbar-light-brand-color: getColour(black);
+$navbar-light-active-color: getColour(pink);
+$nav-link-color: getColour(grey);
+$light: getColour(beige);

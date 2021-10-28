@@ -1,34 +1,44 @@
-h1 {
-	text-align: center;
+.wrapper {
+	flex: 1 0 auto;
+
+	.container,
+	.page-heading {
+		margin: 20px auto;
+		text-align: center;
+
+		@media (min-width: 768px) {
+			margin: 40px auto;
+		}
+	}
 }
 
 .row {
 	margin: 0 auto;
-}
 
-.card {
-	margin: 10px auto;
-}
-.card,
-.card-inner {
-	border-radius: 15px;
-}
+	.card {
+		margin: 10px auto;
+	}
+	.card,
+	.card-inner {
+		border-radius: 15px;
+		border: none;
+	}
 
-.col-primary {
-	background-color: $primary;
-}
+	.col-primary {
+		background-color: getColour(beige);
+	}
 
-.col-secondary {
-	background-color: $secondary;
-	border: 3px solid $active-colour !important;
-}
+	.col-secondary {
+		background-color: getColour(white);
+		border: 3px solid getColour(pink) !important;
+	}
 
-.col-active {
-	background-color: $active-colour !important;
-	border: 3px solid $secondary !important;
-}
+	.col-active {
+		background-color: getColour(pink) !important;
+		border: 3px solid getColour(white) !important;
+	}
 
-.col-md-6 {
-	width: 100%;
-	height: calc();
+	.col-md-6 {
+		width: 100%;
+	}
 }
