@@ -1,0 +1,34 @@
+h1 {
+	text-align: center;
+}
+
+.row {
+	margin: 0 auto;
+}
+
+.card {
+	margin: 10px auto;
+}
+.card,
+.card-inner {
+	border-radius: 15px;
+}
+
+.col-primary {
+	background-color: $primary;
+}
+
+.col-secondary {
+	background-color: $secondary;
+	border: 3px solid $active-colour !important;
+}
+
+.col-active {
+	background-color: $active-colour !important;
+	border: 3px solid $secondary !important;
+}
+
+.col-md-6 {
+	width: 100%;
+	height: calc();
+}

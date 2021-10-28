@@ -1,7 +1,7 @@
 .navbar {
-	background-color: var(--primary-colour) !important;
 	text-transform: uppercase;
 }
+
 
 .navbar-brand {
 	font-size: 32px;
@@ -15,8 +15,5 @@
 .nav-link {
 	font-family: "Archivo Narrow", sans-serif;
 	font-size: 15px;
-	color: var(--link-colour);
-
-.active {
-	color: var(--active-colour) !important;
 }
+

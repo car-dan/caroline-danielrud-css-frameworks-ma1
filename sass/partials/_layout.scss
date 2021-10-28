@@ -5,30 +5,32 @@ html {
 
 body {
 	font-family: "Open Sans", sans-serif;
-	background-color: var(--background-colour);
-	color: var(--text-colour);
+	background-color: $background-colour;
+	color: $text-colour;
 	display: flex;
 	flex-direction: column;
+	
 }
 
 footer {
 	display: flex;
 	flex-shrink: 0;
 	justify-content: space-between;
-	background-color: var(--primary-colour);
+	align-items: center;
+	background-color: $primary;
 	margin-top: 2rem;
 	font-size: 0.8em;
-	color: var(--link-colour);
+	color: $link-colour;
 	padding: 0.5em;
 }
 
 footer a {
-	color: var(--link-colour);
+	color: $link-colour;
 	text-decoration: none;
 }
 
 footer a:hover {
-	color: white;
+	color: #ffffff;
 }
 
 .wrapper {
